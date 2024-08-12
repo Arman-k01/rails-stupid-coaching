@@ -1,0 +1,21 @@
+<!-- app/views/questions/ask.html.erb -->
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h1 class="card-title text-center">Ask the Coach</h1>
+          <p class="text-center text-muted">Type your question below</p>
+          <form action="/answer" method="get" data-turbo="false">
+            <div class="mb-3">
+              <input type="text" name="question" class="form-control" placeholder="Ask your question..." required>
+            </div>
+            <div class="d-grid">
+              <input type="submit" value="Ask!" class="btn btn-primary">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
